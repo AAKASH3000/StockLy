@@ -1,0 +1,24 @@
+.dropdown{
+    position: absolute;
+    top: 5rem;
+    right: 1rem;
+    border: 2px solid white;
+    width: 10%;
+    border-radius: 5px;
+    /* box-shadow: 0 0 10px white; */
+    background-color: rgb(54, 65, 77);
+}
+
+.dropdown ul li{
+    margin-bottom: 10px;
+}
+
+.dropdown li a{
+    color: white;
+}
+
+.dropdown li a:hover{
+    color: rgb(245, 104, 52);
+}
+
+
