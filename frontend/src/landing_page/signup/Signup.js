@@ -32,7 +32,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://stockly-1.onrender.com/signup", //"http://localhost:3002/signup",
+        "https://stockly-1.onrender.com/signup",  //"http://localhost:3002/signup",
         {
           ...inputValue,
         },
