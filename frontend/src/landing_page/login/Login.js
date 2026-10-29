@@ -42,7 +42,7 @@ const Login = () => {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          window.location.replace("http://localhost:3000");
+          window.location.replace("https://stockly-2.onrender.com");  //window.location.replace("http://localhost:3000");
         }, 1000);
       } else {
         handleError(message);
