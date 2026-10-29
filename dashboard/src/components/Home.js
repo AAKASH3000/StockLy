@@ -20,7 +20,7 @@ const Home = () => {
            return;
          }
          const { data } = await axios.post(
-           "http://localhost:3002",
+           "https://stockly-1.onrender.com", //https://stockly-1.onrender.com
            {},
            { withCredentials: true }
          );
