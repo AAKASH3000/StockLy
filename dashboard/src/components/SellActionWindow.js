@@ -14,8 +14,8 @@ const SellActionWindow = ({ uid, price }) => {
 
   const handleSellClick = async () => {
     try {
-
-      await axios.delete(`http://localhost:3002/sellOrder/${uid}`);
+      // await axios.delete(`http://localhost:3002/sellOrder/${uid}`);
+      await axios.delete(`https://stockly-1.onrender.com/sellOrder/${uid}`);
 
       closeBuyWindow();
 
