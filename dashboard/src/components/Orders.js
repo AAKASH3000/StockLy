@@ -8,8 +8,8 @@ const Orders = () => {
 
   // function to fetch orders
   const fetchOrders = () => {
-    axios
-      .get("http://localhost:3002/newOrder")
+    axios    //.get("http://localhost:3002/newOrder")
+      .get("http:https://stockly-1.onrender.com/newOrder")    
       .then((res) => {
         setOrder(res.data);
       })
