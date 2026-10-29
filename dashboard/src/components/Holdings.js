@@ -9,7 +9,8 @@ const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/allHoldings").then((res) => {
+    // axios.get("http://localhost:3002/allHoldings").then((res) => {
+    axios.get("https://stockly-1.onrender.com/allHoldings").then((res) => {
       // console.log(res.data);
       setAllHoldings(res.data);
     }).catch(e=>console.log(e));
