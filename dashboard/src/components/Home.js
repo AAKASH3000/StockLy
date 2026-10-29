@@ -16,7 +16,7 @@ const Home = () => {
      useEffect(() => {
        const verifyCookie = async () => {
          if (!cookies.token) {
-           window.location.replace("http://localhost:3001/login");
+           window.location.replace("https://stockly-3.onrender.com/login"); // window.location.replace("http://localhost:3001/login");
            return;
          }
          const { data } = await axios.post(
@@ -49,7 +49,7 @@ const Home = () => {
             }
           } else {
             removeCookie("token");
-            window.location.replace("http://localhost:3001/login");
+            window.location.replace("https://stockly-3.onrender.com/login"); //window.location.replace("http://localhost:3001/login");
           }
 
        };
@@ -57,7 +57,7 @@ const Home = () => {
      }, [cookies, ,removeCookie]);
      const Logout = () => {
        removeCookie("token");
-       window.location.replace("http://localhost:3001/signup");
+       window.location.replace("https://stockly-3.onrender.com/signup"); //window.location.replace("http://localhost:3001/signup");
      };
    
    
